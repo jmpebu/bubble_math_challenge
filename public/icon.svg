@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <radialGradient id="bubbleGlow" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Maskable Square / App Icon Container -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Bubbles in Background -->
+  <circle cx="100" cy="110" r="45" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="420" cy="130" r="35" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="430" cy="400" r="40" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="90" cy="390" r="30" fill="#ffffff" fill-opacity="0.25"/>
+
+  <!-- Math Symbols Floating -->
+  <text x="80" y="240" font-family="'Fredoka', sans-serif" font-weight="900" font-size="52" fill="#fef08a" opacity="0.9">+</text>
+  <text x="405" y="270" font-family="'Fredoka', sans-serif" font-weight="900" font-size="56" fill="#fef08a" opacity="0.9">×</text>
+  <text x="135" y="440" font-family="'Fredoka', sans-serif" font-weight="900" font-size="52" fill="#bae6fd" opacity="0.9">÷</text>
+  <text x="350" y="440" font-family="'Fredoka', sans-serif" font-weight="900" font-size="52" fill="#fbcfe8" opacity="0.9">−</text>
+
+  <!-- Big Central Floating Soap Bubble -->
+  <circle cx="256" cy="256" r="150" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-width="8" filter="url(#shadow)"/>
+  <circle cx="256" cy="256" r="150" fill="url(#bubbleGlow)"/>
+
+  <!-- Specular Reflection Highlight -->
+  <ellipse cx="210" cy="160" rx="40" ry="20" transform="rotate(-30 210 160)" fill="#ffffff" fill-opacity="0.8"/>
+
+  <!-- Golden Rescue Pup Paw Print (Paw Patrol Inspired) -->
+  <g fill="#fbbf24" stroke="#d97706" stroke-width="4">
+    <!-- Main Paw Pad -->
+    <path d="M 256 240 C 220 240, 205 270, 215 315 C 222 345, 240 355, 256 355 C 272 355, 290 345, 297 315 C 307 270, 292 240, 256 240 Z"/>
+    <!-- Toe 1 -->
+    <ellipse cx="195" cy="215" rx="19" ry="28" transform="rotate(-20 195 215)"/>
+    <!-- Toe 2 -->
+    <ellipse cx="236" cy="190" rx="19" ry="30" transform="rotate(-6 236 190)"/>
+    <!-- Toe 3 -->
+    <ellipse cx="276" cy="190" rx="19" ry="30" transform="rotate(6 276 190)"/>
+    <!-- Toe 4 -->
+    <ellipse cx="317" cy="215" rx="19" ry="28" transform="rotate(20 317 215)"/>
+  </g>
+
+  <!-- Little Paw Star -->
+  <polygon points="256,280 261,295 277,295 264,304 269,319 256,310 243,319 248,304 235,295 251,295" fill="#ffffff"/>
+</svg>

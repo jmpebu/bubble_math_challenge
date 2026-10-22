@@ -1,0 +1,6 @@
+{
+  "name": "Bubble Math Challenge",
+  "description": "Juego interactivo y divertido de operaciones matemáticas para niños con burbujas de respuestas, 10 niveles progresivos, colección de stickers de cachorros rescatistas y efectos sonoros alegres.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

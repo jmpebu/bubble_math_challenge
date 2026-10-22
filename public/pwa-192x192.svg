@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <radialGradient id="bubbleGlow192" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad192)"/>
+  <circle cx="100" cy="110" r="45" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="420" cy="130" r="35" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="256" cy="256" r="150" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="256" cy="256" r="150" fill="url(#bubbleGlow192)"/>
+  <ellipse cx="210" cy="160" rx="40" ry="20" transform="rotate(-30 210 160)" fill="#ffffff" fill-opacity="0.8"/>
+  <g fill="#fbbf24" stroke="#d97706" stroke-width="4">
+    <path d="M 256 240 C 220 240, 205 270, 215 315 C 222 345, 240 355, 256 355 C 272 355, 290 345, 297 315 C 307 270, 292 240, 256 240 Z"/>
+    <ellipse cx="195" cy="215" rx="19" ry="28" transform="rotate(-20 195 215)"/>
+    <ellipse cx="236" cy="190" rx="19" ry="30" transform="rotate(-6 236 190)"/>
+    <ellipse cx="276" cy="190" rx="19" ry="30" transform="rotate(6 276 190)"/>
+    <ellipse cx="317" cy="215" rx="19" ry="28" transform="rotate(20 317 215)"/>
+  </g>
+  <polygon points="256,280 261,295 277,295 264,304 269,319 256,310 243,319 248,304 235,295 251,295" fill="#ffffff"/>
+</svg>
