@@ -214,9 +214,9 @@ export const PlayArena: React.FC<PlayArenaProps> = ({
   const isTimeCritical = !settings.practiceMode && timeLeft <= 4;
 
   return (
-    <div className="relative min-h-[calc(100vh-60px)] flex flex-col justify-between max-w-4xl mx-auto px-4 py-4 select-none">
+    <div className="relative min-h-[calc(100vh-60px)] flex flex-col justify-between w-full max-w-4xl mx-auto px-3 sm:px-4 py-3 sm:py-4 select-none overflow-x-hidden">
       {/* Play HUD Header */}
-      <div className="bg-white/95 backdrop-blur-md rounded-3xl p-4 shadow-lg border-2 border-indigo-100 flex flex-col gap-3">
+      <div className="bg-white/95 backdrop-blur-md rounded-3xl p-3 sm:p-4 shadow-lg border-2 border-indigo-100 flex flex-col gap-2.5 sm:gap-3">
         <div className="flex items-center justify-between gap-2">
           {/* Back button */}
           <button

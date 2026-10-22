@@ -18,6 +18,7 @@ import { ParentModal } from './components/ParentModal';
 import { VictoryModal } from './components/VictoryModal';
 import { StickerModal } from './components/StickerModal';
 import { AndroidInstallModal } from './components/AndroidInstallModal';
+import { MobileBottomNav } from './components/MobileBottomNav';
 import { usePWAInstall } from './hooks/usePWAInstall';
 
 export default function App() {
@@ -154,7 +155,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-sky-50 via-indigo-50/30 to-pink-50/40 text-slate-800 flex flex-col font-sans selection:bg-pink-300">
+    <div className="min-h-screen max-w-full w-full overflow-x-hidden bg-gradient-to-b from-sky-50 via-indigo-50/30 to-pink-50/40 text-slate-800 flex flex-col font-sans selection:bg-pink-300">
       {/* Top Bar Header */}
       <HeaderNav
         currentTab={currentTab}
@@ -177,7 +178,7 @@ export default function App() {
       />
 
       {/* Main View Area */}
-      <main className="flex-1 w-full pb-8">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden pb-20 md:pb-8">
         {currentTab === 'levels' && (
           <LevelSelect
             progress={progress}
@@ -209,6 +210,16 @@ export default function App() {
           />
         )}
       </main>
+
+      {/* Mobile Bottom Navigation for Small Screens */}
+      <MobileBottomNav
+        currentTab={currentTab}
+        onSelectTab={(tab) => {
+          sounds.playPop();
+          setCurrentTab(tab);
+          setVictoryStats(null);
+        }}
+      />
 
       {/* Victory / Level Summary Modal */}
       {victoryStats && activeLevel && (
